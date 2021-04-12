@@ -1,11 +1,11 @@
 for (i = 1; i <= 100; i++){
     if (!(i % 3) && !(i % 5)) {
-        document.writeln("FizzBuzz");
+        document.getElementById("myId").innerHTML += "<p>FizzBuzz</p>";
     } else if (!(i % 5)) {
-        document.writeln("Buzz");
+        document.getElementById("myId").innerHTML += "<p>Buzz</p>";
     } else if (!(i % 3)) {
-        document.writeln("Fizz");
+        document.getElementById("myId").innerHTML += "<p>Fizz</p>";
     } else {
-        document.writeln(i);
+        document.getElementById("myId").innerHTML += "<p>" + i + "</p>";
     }
 }
